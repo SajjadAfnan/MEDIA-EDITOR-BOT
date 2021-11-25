@@ -14,7 +14,7 @@ from pyromod import listen
 
 # the secret configuration specific things
 if bool(os.environ.get("WEBHOOK", False)):
-    from sample_config import Config
+    from configu import Config
 else:
     from configu import Config
 
