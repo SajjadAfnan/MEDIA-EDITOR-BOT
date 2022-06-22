@@ -6,9 +6,9 @@ from asyncio import TimeoutError
 import os
 PACK = filters.animation | filters.document| filters.video|filters.audio |filters.photo
 if bool(os.environ.get("WEBHOOK", False)):
-    from sample_config import Config
+    from configu import Config
 else:
-    from config import Config
+    from configu import Config
 
 
 @Client.on_message(PACK  & filters.private)
